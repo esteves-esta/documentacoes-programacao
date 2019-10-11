@@ -23,9 +23,7 @@ O Jest foi criado pelo Facebook e já vem incluso nos projetos React Native. Jes
 
 O Enzyme é feito pelo Airbnb é usado para renderizar componentes tendo elementos que permitem renderizar só o componente pai e não seus filhos além de poder acessar as *props* e simular eventos e states dos componentes. 
 
-Além disso é necessário uma configuração específica para usa-lo em React Native, além de que ele precisa do Jest ou alguma outra biblioteca de testes.
-
-Também há o fato do Airbnb não estar mais usando React Native em seu próprio aplicativo o que pode influenciar o foco do Enzyme para o React e não para o React Native
+Além disso é necessário uma configuração específica para usa-lo em React Native, além de que ele precisa do Jest ou alguma outra biblioteca de testes. Também há o fato do Airbnb não estar mais usando React Native em seu próprio aplicativo o que pode influenciar o foco do Enzyme para o React e não para o React Native
 
 
 ---
@@ -125,7 +123,7 @@ Após instalar a biblioteca, e se for utilizar o Jest instalar a dependência `j
 
 ### Principais métodos
 
-Enzyme é uma biblioteca de utilitarios, com ele é possivel testar a saida dos seus componentes, tanto separadamente quando junto ao seus filhos. Basimente ele manipula a API do jquery, para conseguir uma interação com a DOM  e assim, manipula-lá. Há três métodos de testes que esta API fornece: 
+Enzyme é uma biblioteca de utilitarios, com ele é possivel testar a saida dos seus componentes, tanto separadamente quando junto ao seus filhos. Basimente ele manipula a API do jquery, para conseguir uma interação com a DOM  e assim, manipula-lá. Há três métodos de testes que esta API fornece, lembrando que no React Native suporta mais o shallow rendering do que o mount pois o React Native não possui o DOM (Document Object Model) usado no HTML e XML. É possivel utilizar o mount com o **JSDOM** porém é necessário adicionar outras bibliotecas para seu uso.
 
 #### Shallow rendering
 
@@ -213,7 +211,7 @@ Caso utilize o comando `npm test` no terminal e não for retornado nada é possi
 
 - [How to test React Components](https://www.robinwieruch.de/react-testing-tutorial)
 
--[How to set up Jest and Enzyme to test React Native apps/](https://www.freecodecamp.org/news/setting-up-jest-enzyme-for-testing-react-native-40393ca04145/)
+- [How to set up Jest and Enzyme to test React Native apps/](https://www.freecodecamp.org/news/setting-up-jest-enzyme-for-testing-react-native-40393ca04145/)
 
 - [Choosing a React Native Component Testing Library: Enzyme vs. React Native Testing Library](https://codingitwrong.com/2019/08/07/enzyme-vs-react-native-testing-library.html)
 
