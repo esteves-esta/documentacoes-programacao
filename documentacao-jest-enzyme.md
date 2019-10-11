@@ -19,9 +19,6 @@
 
 ## Diferenças entre Jest e Enzyme
 
-### Jest
-
-
 O Jest foi criado pelo Facebook e já vem incluso nos projetos React Native. Jest possui ferramentas para 'imitar'(mock) funções e faze asserções.
 
 O Enzyme é feito pelo Airbnb é usado para renderizar componentes tendo elementos que permitem renderizar só o componente pai e não seus filhos além de poder acessar as *props* e simular eventos e states dos componentes. 
@@ -77,14 +74,14 @@ O Jest possui o `.toJSON()` que cria um arquivo que descreve todo o layout do co
 
 Ao utilizar o snapshot sempre quando houver alterações intencionais de mudança de layout é necessário atualizar o snapshot do elemento. Utiliza o comando `test:update` configurado no package.json = `"test:update": "jest --verbose --coverage --updateSnapshot"`.
 
-Se utilizar a biblioteca *styled-components* também é possivel utilizar a biblioteca *jest-styled-components* que auxilia testar se está sendo usada regras corretas de estilo (css).
+Se utilizar a biblioteca **styled-components** também é possivel utilizar a biblioteca **jest-styled-components** que auxilia testar se está sendo usada regras corretas de estilo (css).
 
-O *jest-styled-components* utiliza o snapshot e métodos para verificar as regras de css como o método`.toHaveStyleRule('padding', '0');
+O **jest-styled-components** utiliza o snapshot e métodos para verificar as regras de css como o método`.toHaveStyleRule('padding', '0')`;
 
 
 ### Exemplo de Uso Real
 
-O exemplo abaixo é de um testes feito em um componente criado com *styled-componets* que utiliza o *jest* e o *jest-styled-components*.
+O exemplo abaixo é de um testes feito em um componente criado com **styled-componets** que utiliza o **jest** e o **jest-styled-components**.
 
 ``` import 'react-native';
 import React from 'react';
@@ -140,10 +137,10 @@ Exemplo:
 import button from './Components/button';
 
 describe('<Button/>', ()=>{
-	it('Rendered component', ()=>{
-		const testeComponent= shallow(<button/>);
-		expect(testeComponent).tomatchSnapshot();			
-	});
+ it('Rendered component', ()=>{
+	const testeComponent= shallow(<button/>);
+	expect(testeComponent).tomatchSnapshot();
+ });
 });
 ```
 	
@@ -183,7 +180,7 @@ describe('testando valores', ()=>{
 	test('se isso fizer essa coisa',()=>{
 		expect(user.idade).toEqual(18);
 	})
-}) ```
+})```
 
 #### Diferenças entre It e test:
 
