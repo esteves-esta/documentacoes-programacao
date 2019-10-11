@@ -1,0 +1,73 @@
+Jest  
+
+-O que é; 
+-para que serve;
+-métodos
+-como instalar;
+
+Enzyme 
+
+-O que é; 
+-para que serve;
+-métodos
+-como instalar;
+
+
+O jest é um framework de testes que tem como beneficios sua agilidade em testes, snapshoots , a possibilidade de rodar seus testes separadamente para conseguir um melhor desempenho, e conseguir rodas qualquer ódigo que tive JS como uma linguagem base. o Jest oferece por default suporte a operações assíncronas através de promessas e async/await	
+
+
+Enzyme é uma biblioteca de utilitarios para enzyme e com ele é possivel testar a saida dos seus componentes, tanto separadamente quando junto ao seus filhos.
+Basimente ele manipula a API do jquery, para conseguir uma interação com a DOM  e assim, manipula-lá. hÁ três métodos de testes que esta api fornece: 
+-Shallow rendering: é uma de você testar seu componente como unidade, e observar seu comportamento sem a interferencia de um filho. 
+
+ex: 
+	import {shallow} from 'enzyme';
+	import button from './Components/button';
+	
+	describe('<Button/>', ()=>{
+		it('Rendered component', ()=>{			
+			const testeComponent= shallow(<button/>);
+			expect(testeComponent).tomatchSnapshot();			
+		});
+	});
+	
+	*O Shallow simples chama: Constructor e render;
+	*Shallow + setProps calls : componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate;
+	*Shallow + unmount chama componentWillUnmount;
+
+-Mount : Ele funciona diferente do shallow, podemos dizer que ele é um teste de integração entre o elemento e seus filhos, com ele podemos saber se os filhos e o pai se comportam como o esperado. É mais utilizavel quando precisamos testar comonentes qeu estão direto com a API DOM pois assim conseguimos analisar seu comortamento todo geral na Dom, algo muito  interessante é que assim ele tem acesso ao ciclo de vida do componente.
+
+	*Simple Mount chama:os métodos constructor, render, componentDidMount;
+	*mount + setProps chama :omponentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate.
+	*Mount + unmount chama componentWillUnmount;
+
+- render: Ele renderiza tudo, todso os filhos e sem chama o método render;
+
+
+	há métodos que não são necessários e que são bem conhecidos:
+
+	- describe('instruction', fn);
+			É um bloco que agrupa varios casos de testes. mesmo podendo usalo para varios testes diferentes, uma boa opção é usar ele para separar os testes tem bloco que tenham um contexto semelhante;
+
+	exemplo :
+
+
+		const user = {
+			name:'Geovanna',
+			idade:18,
+		} 
+
+		describe('testando valores', ()=>{
+			test('se isso fizer essa coisa', ()=>{
+				expect(user.name).toEqual('Geovanna');
+			})
+			test('se isso fizer essa coisa',()=>{
+				expect(user.idade).toEqual(18);
+			})
+		}) 
+
+Diferenças entre It e test:
+	Basicamente não há muitas diferenças entre eles, o que destaca é o modo de leitura. No exercicio acima eu coloquei como se lê um código com Test : "se isso fizer essa coisa...". Com o it se lê : "deveria fazer essa coisa".
+
+
+
