@@ -168,7 +168,8 @@ Há métodos que não são necessários e que são bem conhecidos:
 Exemplo :
 
 
-```const user = {
+```
+const user = {
 	name:'Geovanna',
 	idade:18,
 } 
@@ -180,7 +181,8 @@ describe('testando valores', ()=>{
 	test('se isso fizer essa coisa',()=>{
 		expect(user.idade).toEqual(18);
 	})
-})```
+})
+```
 
 #### Diferenças entre It e test:
 
@@ -207,16 +209,15 @@ Caso utilize o comando `npm test` no terminal e não for retornado nada é possi
 
 - [Testing with Jest and Enzyme in React ](https://blog.usejournal.com/testing-with-jest-and-enzyme-in-react-part-1-162ce7466128)
 
-- (What is the best React testing platform other than Jest?)[https://www.quora.com/What-is-the-best-React-testing-platform-other-than-Jest]
+- [What is the best React testing platform other than Jest?](https://www.quora.com/What-is-the-best-React-testing-platform-other-than-Jest)
 
-- (How to test React Components)[https://www.robinwieruch.de/react-testing-tutorial]
+- [How to test React Components](https://www.robinwieruch.de/react-testing-tutorial)
 
+-[How to set up Jest and Enzyme to test React Native apps/](https://www.freecodecamp.org/news/setting-up-jest-enzyme-for-testing-react-native-40393ca04145/)
 
--(https://www.freecodecamp.org/news/setting-up-jest-enzyme-for-testing-react-native-40393ca04145/)[https://www.freecodecamp.org/news/setting-up-jest-enzyme-for-testing-react-native-40393ca04145/]
+- [Choosing a React Native Component Testing Library: Enzyme vs. React Native Testing Library](https://codingitwrong.com/2019/08/07/enzyme-vs-react-native-testing-library.html)
 
-- (Choosing a React Native Component Testing Library: Enzyme vs. React Native Testing Library)[https://codingitwrong.com/2019/08/07/enzyme-vs-react-native-testing-library.html]
-
-- (Sunsetting React Native)[https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a]
+- [Sunsetting React Native](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)
 
 - [Live do Rocketseat sobre Jest com React](https://www.youtube.com/watch?v=aK-wHbSD3Ws)
 
