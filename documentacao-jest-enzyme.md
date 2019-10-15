@@ -2,21 +2,21 @@
 
 ## Índice
 
-* Diferenças entre Jest e Enzyme
-* Jest
- - Configuração no package.json
- - Principais métodos
-* Enzyme
- - Arquivo de configuração
- - Principais métodos
-	- Shallow
-	- Render
-	- Mount
-	-  Diferenças entre it e test
-* React Native Testing Library
- - Exemplo de uso
-* Solução de erros
-* Referências
+* [Diferenças entre Jest e Enzyme](#diferenças-entre-jest-e-enzyme)
+* [Jest](#jest)
+ - [Configuração no package.json](#configuração-no-package.json)
+ - [Principais métodos](principais-métodos)
+* [Enzyme](#enzyme)
+ - [Arquivo de configuração](#arquivo-de-configuração)
+ - [Principais métodos](#principais-métodos)
+	- [Shallow](#shallow)
+	- [Render](#render)
+	- [Mount](#mount)
+	- [Diferenças entre it e test](#diferenças-entre-it-e-test)
+* [React Native Testing Library](#react-native-testing-library)
+ - [Exemplo de uso](#exemplo-de-uso)
+* [Solução de erros](#solução-de-erros)
+* [Referências](#referências)
 
 ## Diferenças entre Jest e Enzyme
 
