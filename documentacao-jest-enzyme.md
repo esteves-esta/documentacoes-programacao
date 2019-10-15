@@ -13,7 +13,8 @@
 	- Render
 	- Mount
 	-  Diferenças entre it e test
- - Exemplo de Uso Real
+* React Native Testing Library
+ - Exemplo de uso
 * Solução de erros
 * Referências
 
@@ -186,6 +187,46 @@ describe('testando valores', ()=>{
 
 Basicamente não há muitas diferenças entre eles, o que destaca é o modo de leitura. No exercicio acima eu coloquei como se lê um código com `test`: "se isso fizer essa coisa...", com o `it` se lê : "deveria fazer essa coisa".
 
+
+## React Native Testing Library
+
+É uma biblioteca que já vem ao iniciar um projeto react-native que auxilia nos testes juntamente com jest.
+
+> `npm install --save-dev @testing-library/react-native`
+
+Essa biblioteca permite testar elementos específicos dentro do seu componente atráves da procura dele por seu texto, o valor de seu input, com labels de acessibilidade e por uma id de teste, a `testID`. 
+
+Exemplo: `const { getByTestId, getByText, queryByTestId, baseElement } = render(<Example />);`
+
+Entre suas funcionalidades estão:
+- possibilidade de 'clicar', `fireEvent()` em um botão/componente;
+- modificar o texto de um input;
+- utilizar o `wait` junto do `await` para testar eventos assincrônos;
+
+
+### Exemplo de Uso
+
+```
+import React from 'react';
+import { fireEvent, render, wait } from '@testing-library/react-native';
+
+test('examples of some things', async () => {
+  const { getByTestId, getByText, queryByTestId, baseElement } = render(<Example />);
+  const famousWomanInHistory = 'Ada Lovelace';
+
+  const input = getByTestId('input');
+  fireEvent.changeText(input, famousWomanInHistory);
+
+  const button = getByText('Print Username');
+  fireEvent.press(button);
+
+  await wait(() => expect(queryByTestId('printed-username')).toBeTruthy());
+
+  expect(getByTestId('printed-username').props.children).toBe(famousWomanInHistory);
+  expect(baseElement).toMatchSnapshot();
+});
+```
+fonte: [RNTL](https://www.native-testing-library.com/docs/example)
 
 ---
 
