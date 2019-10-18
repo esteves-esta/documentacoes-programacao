@@ -1,4 +1,8 @@
-# documentacao-testes-react-native
-Repositório para armazenar documentação de testes com React Native.
+# Documentações sobre React Native.
+Repositório para armazenar documentação sobre React Native.
 
-### [Jest & Enzyme](https://github.com/esteves-esta/documentacao-testes-react-native/blob/master/documentacao-jest-enzyme.md)
+### [Testes com Jest & Enzyme](https://github.com/esteves-esta/documentacao-testes-react-native/blob/master/documentacao-jest-enzyme.md)
+
+## [Configuração do ambiente React Native no Ubuntu]()
+
+
