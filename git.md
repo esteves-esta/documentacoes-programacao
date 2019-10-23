@@ -1,9 +1,9 @@
 # GIT
 
 ## Índice
-- [Comandos gerais](#comandos-gerai)
+- [Comandos gerais](#comandos-gerais)
 - [GitFLow](#gitflow)
-- [Extensões no Visual Studio Code](#extensoes-no-visual-studio-code)
+- [Extensões no Visual Studio Code](#extensões-no-visual-studio-code)
 - [Referências](#referências)
 
 ---
@@ -38,9 +38,7 @@
 
 
 ### Resolver erros ao dar commit
-- Quando há um commit no repositório local porém não foi dado pull antes e existens commits no repositório remoto: `git pull --rebase` (esse comando altera a 'cabeça' do seu repositório local). 
-
-Se ocorrer conflito, utilizar o vscode para solucionar e realizar o merge, depois adicionar as alteções `git add .` e utilizar `git rebase --continue` e depois o `git push`.
+- Quando há um commit no repositório local porém não foi dado pull antes e existens commits no repositório remoto: `git pull --rebase` (esse comando altera a 'cabeça' do seu repositório local). Se ocorrer conflito, utilizar o vscode para solucionar e realizar o merge, depois adicionar as alteções `git add .` e utilizar `git rebase --continue` e depois o `git push`.
 
 - Reverter o commit que foi dado e já foi dado **git push**:
 `git revert COMMIT-ID`
@@ -79,17 +77,16 @@ Estes branchs, ao contrário do *master* e *dev* são excluidos após a finaliza
 
 São criados então além dos dois branchs mencionados branchs para fins específicos que especificações de qual branch deve se originar e qual deve ser mesclados.
 
-- **melhorias (feature/novo-componente)**
-> Esses branchs são criados da branch *dev* e são mesclados na *dev*.
+### Melhorias (feature/novo-componente)
+Esses branchs são criados da branch *dev* e são mesclados na *dev*.
 
+### Lançamentos (release/numero-da-versao)
+Esses branchs são criados da branch *dev* e são mesclados na *master e dev*.
 
-- **lançamentos (release/numero-da-versao)** 
-> Esses branchs são criados da branch *dev* e são mesclados na *master e dev*.
+> "Branches de lançamento são usados para preparação do lançamento da próxima versão de produção. Nele são permitidas pequenas correções e atualização de versão nos arquivos"
 
-"Branches de lançamento são usados para preparação do lançamento da próxima versão de produção. Nele são permitidas pequenas correções e atualização de versão nos arquivos"
-
-- **correções (hotifx/numero-do-hotfix)**
-> Esses branchs são criados da branch *master* e são mesclados na *mater e dev*.
+### Correções (hotifx/numero-do-hotfix)
+Esses branchs são criados da branch *master* e são mesclados na *mater e dev*.
 
 
 ### Comandos git sobre branches
