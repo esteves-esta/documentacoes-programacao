@@ -5,5 +5,5 @@ Repositório para armazenar documentação sobre React Native.
 
 ### [Configurando ambiente React Native no Ubuntu](https://github.com/esteves-esta/documentacao-react-native/blob/master/documentacao-jest-enzyme.md)
 
-### [Git]()
+### [Git](https://github.com/esteves-esta/documentacao-react-native/blob/master/git.md)
 
