@@ -2,7 +2,10 @@
 
 ## Índice
 - [Comandos gerais](#comandos-gerais)
+  - [Verificar commits e alterações realizados](#verificar-commits-e-alterações-realizados)
+  - [Resolver erros ao dar commit](#resolver-erros-ao-dar-commit)
 - [GitFLow](#gitflow)
+  - [Comandos git sobre branches](#comandos-git-sobre-branches)
 - [Extensões no Visual Studio Code](#extensões-no-visual-studio-code)
 - [Referências](#referências)
 
@@ -36,6 +39,14 @@
 - Visualizar arquivos alterados e ainda não commitados e quantidade de alterações
 `git diff --stat`
 
+- Visualiar commits feitos depois de determinada data
+`git log --after="MMM DD YYYY"`
+
+- Visualizar commit feitos antes de determinada data
+`git log --before="MMM DD YYYY"`
+
+- Pesquisar commits por mensagem 
+`git log --grep produtos`
 
 ### Resolver erros ao dar commit
 - Quando há um commit no repositório local porém não foi dado pull antes e existens commits no repositório remoto: `git pull --rebase` (esse comando altera a 'cabeça' do seu repositório local). Se ocorrer conflito, utilizar o vscode para solucionar e realizar o merge, depois adicionar as alteções `git add .` e utilizar `git rebase --continue` e depois o `git push`.
@@ -88,28 +99,36 @@ Esses branchs são criados da branch *dev* e são mesclados na *master e dev*.
 ### Correções (hotifx/numero-do-hotfix)
 Esses branchs são criados da branch *master* e são mesclados na *mater e dev*.
 
+### Extensão para o git
+Existe também a extensão **git-flow** que abstrai os comandos git para utilizar o modelo do Git Flow. Saiba mais [aqui](https://tableless.com.br/git-flow-introducao/) e [aqui](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html).
+
+### Para entender mais sobre gitFlow: 
+- [Fluxo de versionamento de software com git flow](https://blog.ateliedocodigo.com.br/fluxo-de-versionamento-de-software-com-git-flow-b9f5195c679e)
+- [Utilizando o fluxo Git Flow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
+
 
 ### Comandos git sobre branches
-
-- Criar nova branch
-`git branch -b feature/nome`
-
-- Renomear branch
-`git branch -m novo-nome`
-
-- Deletar branch
-`git branch -d nome`
-
-- Ir para outro branch
-`git checkout nome`
 
 - Mostra branchs locais e remotos:
 `git branch -a`
 
-### Para entender mais sobre esse fluxo: 
-- [Fluxo de versionamento de software com git flow](https://blog.ateliedocodigo.com.br/fluxo-de-versionamento-de-software-com-git-flow-b9f5195c679e)
-- [Utilizando o fluxo Git Flow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
+- Criar nova branch
+`git branch -b feature/nova-branch`
 
+- Renomear branch
+`git branch -m nova-branch`
+
+- Deletar branch
+`git branch -d nova-branch`
+
+- Ir para outro branch
+`git checkout nova-branch`
+
+- Enviar branch local para repositório remoto 
+`git push -u origin nova-branch`
+
+- Deletar branch remotos
+`git push origin -d nova-branch`
 
 ---
 
@@ -132,4 +151,4 @@ Também é possível utilizar a extensão GitLens que adiciona funcionalidades q
 - [Git Cheat Sheet](https://github.com/bennadel/git-cheat-sheet)
 - [A successful git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Fluxo de versionamento de software com git flow](https://blog.ateliedocodigo.com.br/fluxo-de-versionamento-de-software-com-git-flow-b9f5195c679e)
-
+- [Comandos do Git que você precisa conhecer](https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-1/)
