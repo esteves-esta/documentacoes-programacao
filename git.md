@@ -94,7 +94,7 @@ Esses branchs são criados da branch *master* e são mesclados na *mater e dev*.
 - Criar nova branch
 `git branch -b feature/nome`
 
-- Renomar branch
+- Renomear branch
 `git branch -m novo-nome`
 
 - Deletar branch
