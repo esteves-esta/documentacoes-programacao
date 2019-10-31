@@ -106,6 +106,22 @@ Existe também a extensão **git-flow** que abstrai os comandos git para utiliza
 - [Fluxo de versionamento de software com git flow](https://blog.ateliedocodigo.com.br/fluxo-de-versionamento-de-software-com-git-flow-b9f5195c679e)
 - [Utilizando o fluxo Git Flow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
 
+## Comandos para incorporar branch de feature na branch dev ([fonte](https://nvie.com/posts/a-successful-git-branching-model/))
+
+- Ir para branch dev
+`git checkout dev`
+
+- Dar merge no branch desejado
+`git merge --no-ff feature/funcionalidade-x`
+
+- Se occorer conflito, editar arquivo no Visual Code, e dar um commit nas alterações
+
+- Deletar branch de feature
+`git branch -d feature/funcionalidade-x`
+
+- Dar o push
+`git push origin develop`
+
 
 ### Comandos git sobre branches
 
