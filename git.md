@@ -122,7 +122,7 @@ Existe também a extensão **git-flow** que abstrai os comandos git para utiliza
 `git branch -d feature/funcionalidade-x`
 
 - Dar o push
-`git push origin develop`
+`git push origin dev`
 
 
 ### Comandos git sobre branches
