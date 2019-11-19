@@ -107,7 +107,8 @@ Existe também a extensão **git-flow** que abstrai os comandos git para utiliza
 - [Fluxo de versionamento de software com git flow](https://blog.ateliedocodigo.com.br/fluxo-de-versionamento-de-software-com-git-flow-b9f5195c679e)
 - [Utilizando o fluxo Git Flow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
 
-## Comandos para incorporar branch de feature na branch dev ([fonte](https://nvie.com/posts/a-successful-git-branching-model/))
+## Comandos para incorporar branch de feature na branch dev
+> ([fonte](https://nvie.com/posts/a-successful-git-branching-model/))
 
 - Ir para branch dev
 `git checkout dev`
