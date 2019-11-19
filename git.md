@@ -5,6 +5,7 @@
   - [Verificar commits e alterações realizados](#verificar-commits-e-alterações-realizados)
   - [Resolver erros ao dar commit](#resolver-erros-ao-dar-commit)
 - [GitFLow](#gitflow)
+  - [Comandos para incorporar branch de feature na branch dev](#comandos-para-incorporar-branch-de-feature-na-branch-dev)
   - [Comandos git sobre branches](#comandos-git-sobre-branches)
 - [Extensões no Visual Studio Code](#extensões-no-visual-studio-code)
 - [Referências](#referências)
