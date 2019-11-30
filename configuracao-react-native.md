@@ -214,7 +214,10 @@ Instalar (globalmente) o React Native pelo:
 
 3.  (EMULADOR) Abrir o menu (ctrl+m) e entrar no *dev settings* do emulador e inserir seu ip e a porta. Exemplo: 192.168.15.10:8081. O seu ip pode ser descoberto com o comando `> ip addr show`.
 
-4. [(CELULAR)](https://facebook.github.io/react-native/docs/running-on-device) Após conectar o celular ao computador por usb, e configurar o celular ao permitir as **opções de desenvolvedor**, usar o comando `lssub` para pegar o código do celular; depois usar o comando `> echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", MODE="0666", GROUP="plugdev"' | sudo tee /etc/udev/rules.d/51-android-usb.rules`. Verificar se o celular está conectado pelo comando `> adb devices`.
+4. [(CELULAR)](https://facebook.github.io/react-native/docs/running-on-device) Após conectar o celular ao computador por usb, e configurar o celular ao permitir as **opções de desenvolvedor**, usar o comando `lssub` para pegar o código do celular; depois usar o comando  trocando **04e8** pelo código do celular: 
+
+		echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", MODE="0666", GROUP="plugdev"' | sudo tee /etc/udev/rules.d/51-android-usb.rules
+Verificar se o celular está conectado pelo comando `> adb devices`.
 
 
 
