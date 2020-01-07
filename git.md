@@ -131,22 +131,19 @@ Existe também a extensão **git-flow** que abstrai os comandos git para utiliza
 `git branch -a`
 
 - Criar nova branch
-`git branch -b feature/nova-branch`
+`git checkout -b feature/nova-branch`
 
 - Renomear branch
-`git branch -m nova-branch`
+`git checkout -m nova-branch`
 
 - Deletar branch
-`git branch -d nova-branch`
+`git checkout -d nova-branch`
 
 - Ir para outro branch
-`git checkout nova-branch`
+`git checkout outra-branch`
 
 - Enviar branch local para repositório remoto 
-`git push -u origin nova-branch`
-
-- Deletar branch remotos
-`git push origin -d nova-branch`
+`git push --set-upstream origin feature/nome`
 
 ---
 
