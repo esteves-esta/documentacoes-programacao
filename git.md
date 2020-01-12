@@ -1,14 +1,56 @@
 # GIT
 
 ## Índice
-- [Comandos gerais](#comandos-gerais)
+- Comandos
+  - [Comandos para incorporar branch de feature na branch dev](#comandos-para-incorporar-branch-de-feature-na-branch-dev)
+  - [Comandos git sobre branches](#comandos-git-sobre-branches)
+  - [Comandos gerais](#comandos-gerais)
   - [Verificar commits e alterações realizados](#verificar-commits-e-alterações-realizados)
   - [Resolver erros ao dar commit](#resolver-erros-ao-dar-commit)
 - [GitFLow](#gitflow)
-  - [Comandos para incorporar branch de feature na branch dev](#comandos-para-incorporar-branch-de-feature-na-branch-dev)
-  - [Comandos git sobre branches](#comandos-git-sobre-branches)
 - [Extensões no Visual Studio Code](#extensões-no-visual-studio-code)
 - [Referências](#referências)
+
+---
+
+## Comandos para incorporar branch de feature na branch dev
+> ([fonte](https://nvie.com/posts/a-successful-git-branching-model/))
+
+- Ir para branch dev
+`git checkout dev`
+
+- Dar merge no branch desejado
+`git merge --no-ff feature/funcionalidade-x`
+
+- Se occorer conflito, editar arquivo no Visual Code, e dar um commit nas alterações
+
+- Deletar branch de feature
+`git branch -d feature/funcionalidade-x`
+
+- Dar o push
+`git push origin dev`
+
+
+### Comandos git sobre branches
+
+- Mostra branchs locais e remotos:
+`git branch -a`
+
+- Criar nova branch
+`git checkout -b feature/nova-branch`
+
+- Renomear branch
+`git checkout -m nova-branch`
+
+- Deletar branch
+`git checkout -d nova-branch`
+
+- Ir para outro branch
+`git checkout outra-branch`
+
+- Enviar branch local para repositório remoto 
+`git push --set-upstream origin feature/nome`
+
 
 ---
 
@@ -107,43 +149,6 @@ Existe também a extensão **git-flow** que abstrai os comandos git para utiliza
 - [Fluxo de versionamento de software com git flow](https://blog.ateliedocodigo.com.br/fluxo-de-versionamento-de-software-com-git-flow-b9f5195c679e)
 - [Utilizando o fluxo Git Flow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
 
-## Comandos para incorporar branch de feature na branch dev
-> ([fonte](https://nvie.com/posts/a-successful-git-branching-model/))
-
-- Ir para branch dev
-`git checkout dev`
-
-- Dar merge no branch desejado
-`git merge --no-ff feature/funcionalidade-x`
-
-- Se occorer conflito, editar arquivo no Visual Code, e dar um commit nas alterações
-
-- Deletar branch de feature
-`git branch -d feature/funcionalidade-x`
-
-- Dar o push
-`git push origin dev`
-
-
-### Comandos git sobre branches
-
-- Mostra branchs locais e remotos:
-`git branch -a`
-
-- Criar nova branch
-`git checkout -b feature/nova-branch`
-
-- Renomear branch
-`git checkout -m nova-branch`
-
-- Deletar branch
-`git checkout -d nova-branch`
-
-- Ir para outro branch
-`git checkout outra-branch`
-
-- Enviar branch local para repositório remoto 
-`git push --set-upstream origin feature/nome`
 
 ---
 
