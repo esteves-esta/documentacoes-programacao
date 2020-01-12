@@ -13,8 +13,7 @@
 
 ---
 
-## Comandos para incorporar branch de feature na branch dev
-> ([fonte](https://nvie.com/posts/a-successful-git-branching-model/))
+## Comandos para incorporar branch de feature na branch dev ([fonte](https://nvie.com/posts/a-successful-git-branching-model/))
 
 - Ir para branch dev
 `git checkout dev`
@@ -31,7 +30,7 @@
 `git push origin dev`
 
 
-### Comandos git sobre branches
+### Comandos git sobre branchs
 
 - Mostra branchs locais e remotos:
 `git branch -a`
@@ -42,8 +41,14 @@
 - Renomear branch
 `git checkout -m nova-branch`
 
-- Deletar branch
-`git checkout -d nova-branch`
+- Deletar branch local
+`git branch -d nome-branch`
+
+- Forçar exclusão de branch local
+`git branch -D nome-branch`
+
+- Deletar branch remota
+`git push nome-branch-remota --delete nome-branch`
 
 - Ir para outro branch
 `git checkout outra-branch`
