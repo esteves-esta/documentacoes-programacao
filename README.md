@@ -6,6 +6,8 @@ Repositório para armazenar documentação sobre React Native.
 
 ### [Configurando ambiente React Native no Ubuntu](https://github.com/esteves-esta/documentacao-react-native/blob/master/configuracao-react-native.md)
 
+### [Rocketseat Docs - Erros comuns  React Native](https://docs.rocketseat.dev/ambiente-react-native/errors/android)
+
 ### [Git](https://github.com/esteves-esta/documentacao-react-native/blob/master/git.md)
 
 ### [Push Notifications](https://github.com/esteves-esta/documentacao-react-native/blob/master/push-notifications.md)
