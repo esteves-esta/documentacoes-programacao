@@ -4,7 +4,6 @@
 ## Instalação
 
 - [Gerenciadores de Pacote](#gerenciadores-de-pacote)
-	- [YARN](#yarn)
 	- [NODE.JS](#nodejs)
 - [GIT](#git)
 - [Java - JDK8](#java-jdk8)
@@ -32,47 +31,12 @@
 
 ### Gerenciadores de Pacote
 
-#### YARN
-
-**CURL** 
-
-
-Primeiramente os comandos para instalar o curl que será usado na instalação do YARN.
-    1. `sudo apt-get install curl` 
-    2. `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`.
-
-**YARN**
-
-
-Os comando para instalar o yarn pelo apt-get:
-    1. `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
-
-    2. `sudo apt-get update && sudo apt-get install yarn`
-
-    3. E no final verificando se foi instalado com sucesso.`yarn --version`
-
----
-
-
-#### NODE.JS
-
-**NVM**
-
-
-Utilizando o **nvm** para instalar o **node.js**:
-1. `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`.
-
-E depois user `nvm --version` para se certificar que a instalação foi feita com sucesso.
-
-
 **NODE.JS**
 
 
-  - Com o **curl** primeiro o comando `curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -` e depois instalar com `sudo apt install nodejs`.
-
-    ou
-    
-  - Com o **nvm** pode-se verificar todas as versões com o comando: `nvm ls-remote node`. Instalar o node :`nvm install v10.16.3`.
+  * curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+  
+  * sudo apt-get install -y nodejs
  
 Depois se certificar que foram instalados o node: `node -v`; e o npm: `npm -v`.
 
