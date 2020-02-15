@@ -89,10 +89,15 @@ A instalação do git para controle de versionamento de projetos:
 
 ### Java - JDK8
 É necessário a instalação do JDK 8, primeiramente adicionar a fonte de instalação: 
+
     1. `sudo add-apt-repository ppa:openjdk-r/ppa` 
+    
     2. atualizar o apt-get: `sudo apt update`.
+    
     3. Checar a lista de itens para atualizar `apt list --upgradable` 
+    
     4. e finalmente instala-lo: `sudo apt install openjsk-8-jdk`. 
+    
     5. Testar a instalação do JDK `java -version`
 
 ---
