@@ -60,7 +60,7 @@ A instalação do git para controle de versionamento de projetos:
     
     3. Checar a lista de itens para atualizar `apt list --upgradable` 
     
-    4. e finalmente instala-lo: `sudo apt install openjsk-8-jdk`. 
+    4. e finalmente instala-lo: `sudo apt install openjdk-8-jdk`. 
     
     5. Testar a instalação do JDK `java -version`
 
