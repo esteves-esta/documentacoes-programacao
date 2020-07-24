@@ -224,6 +224,7 @@ describe('Modal Reducer', () => {
 
 ```
 // __tests__/sagas/Modal.test.tsx
+
 import sagaHelper from 'redux-saga-testing';
 import {call, put} from 'redux-saga/effects';
 import api from '~/services/api';
@@ -254,7 +255,6 @@ describe('sagaModal', () => {
     });
 
     it('should return with sucess and send SHOW_MODAL', sagaResult => {
-
       expect(sagaResult).toEqual(put(actionShow(mockSucessResponse.data)));
     });
 
@@ -267,8 +267,8 @@ describe('sagaModal', () => {
     
     const it = sagaHelper(sagaModal());
 
-    // mockando o resultado do axios
-    const mockErrorResponse = "found status 500";
+    // mockando mensagem de erro
+    const mockErrorResponse = "status 500";
 
     it('should call api with correct URI', sagaResult => {
       expect(sagaResult).toEqual(call(api.post, '/modal/status'));
