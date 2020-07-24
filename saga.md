@@ -3,7 +3,13 @@
 
 ### Referências
 
-- [titulo](url)
+- [Redux-Saga Oficial Docs](https://redux-saga.js.org/docs/advanced/Testing.html)
+- [JavaScript – Redux Saga Testing – Creation](https://bjarte.tech/2019/02/22/javascript-redux-saga-testing-creation/)
+- [Evaluating redux saga test libraries](https://blog.scottlogic.com/2018/01/16/evaluating-redux-saga-test-libraries.html)
+- [Testing redux sagas with a plan](https://medium.com/practo-engineering/testing-redux-sagas-with-a-plan-e59124c5d139)
+- [redux-saga-testing library](https://github.com/antoinejaussoin/redux-saga-testing)
+- [Redux Sagas Make Testing Easier](ttps://www.youtube.com/watch?v=7cRQorjgLyY)
+- [Lost with Redux and sagas? Implement them yourself!](https://scastiel.dev/posts/2019-08-03-lost-redux-saga-reimplement-them/)
 
 ### Redux
 
