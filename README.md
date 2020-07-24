@@ -1,18 +1,27 @@
 # Documentações sobre React Native.
+> Repositório para armazenar documentação feitas como forma de documentar meu entendimento sobre React Native.
 
-Repositório para armazenar documentação sobre React Native.
+#### [Documentação sobre Testes em Componentes (Jest & Enzyme)](https://github.com/esteves-esta/documentacao-testes-react-native/blob/master/documentacao-jest-enzyme.md)
 
-### [Documentação sobre Testes em Componentes (Jest & Enzyme)](https://github.com/esteves-esta/documentacao-testes-react-native/blob/master/documentacao-jest-enzyme.md)
+#### [Configurando ambiente React Native no Ubuntu](https://github.com/esteves-esta/documentacao-react-native/blob/master/configuracao-react-native.md)
 
-### [Configurando ambiente React Native no Ubuntu](https://github.com/esteves-esta/documentacao-react-native/blob/master/configuracao-react-native.md)
 
-### [Rocketseat Docs - Erros comuns  React Native](https://docs.rocketseat.dev/ambiente-react-native/errors/android)
+#### [Git](https://github.com/esteves-esta/documentacao-react-native/blob/master/git.md)
 
-### [Git](https://github.com/esteves-esta/documentacao-react-native/blob/master/git.md)
 
-### [Push Notifications](https://github.com/esteves-esta/documentacao-react-native/blob/master/push-notifications.md)
+#### [Push Notifications](https://github.com/esteves-esta/documentacao-react-native/blob/master/push-notifications.md)
 
-### Gerando versão de release de um app React Native
+
+#### [Redux & Saga](https://github.com/esteves-esta/documentacoes-programacao/blob/master/saga.md)
+
+
+## Referências Externas
+
+
+#### [Rocketseat Docs - Erros comuns  React Native](https://docs.rocketseat.dev/ambiente-react-native/errors/android)
+
+
+#### Gerando versão de release de um app React Native
 
 - [Generate React Native release to android](https://www.instamobile.io/android-development/generate-react-native-release-build-android/)
 
