@@ -8,7 +8,7 @@
 - [Evaluating redux saga test libraries](https://blog.scottlogic.com/2018/01/16/evaluating-redux-saga-test-libraries.html)
 - [Testing redux sagas with a plan](https://medium.com/practo-engineering/testing-redux-sagas-with-a-plan-e59124c5d139)
 - [redux-saga-testing library](https://github.com/antoinejaussoin/redux-saga-testing)
-- [Redux Sagas Make Testing Easier](ttps://www.youtube.com/watch?v=7cRQorjgLyY)
+- [Redux Sagas Make Testing Easier](https://www.youtube.com/watch?v=7cRQorjgLyY)
 - [Lost with Redux and sagas? Implement them yourself!](https://scastiel.dev/posts/2019-08-03-lost-redux-saga-reimplement-them/)
 
 ### Redux
