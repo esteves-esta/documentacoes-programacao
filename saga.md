@@ -118,7 +118,7 @@ export default function getModal(
 ### SAGA
 
 #### `saga`
-O saga é o local onde se realização ação asincronas na aplicação e lida com a distribuição dos dados asincronos para a **store**.
+O saga é o local onde se realização ação assincronas na aplicação e lida com a distribuição dos dados asincronos para a **store**.
 O saga é uma função generator `function*`, esse tipo de função se utiliza do `yield` para parar a execução em um ponto até receber o resultado asincrono.
 
 #### `rootSaga`
@@ -221,6 +221,8 @@ describe('Modal Reducer', () => {
 ```
 
 ### Saga
+
+Utilizando a biblioteca redux-saga-testing é possível testar o saga sem ter que mockar as chamadas a api. E testar cada yield que ocorre dentro do saga desejado.
 
 ```
 // __tests__/sagas/Modal.test.tsx
